@@ -1,0 +1,27 @@
+<html>
+<body>
+<script>
+   var table = document.createElement("table");
+
+   table.id = "t";
+   
+   document.body.appendChild(table);
+   
+   var value = {
+    text: document.getElementById('t')
+   };
+   
+   function setText() {
+      value.text.innerHTML = "Table inner HTML";
+   }
+   
+   setText();
+   
+   function removeText() {
+      document.body.removeChild(document.getElementById('t'));
+   }
+
+   removeText();
+</script>
+</body>
+</html>
